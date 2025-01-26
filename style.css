@@ -1,0 +1,705 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+html, body {
+    height: 100%;
+    width: 100%;
+
+}
+
+nav {
+    height: 13%;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.953);
+    border-bottom: 4px solid blue; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navleft {
+    height: 100%;
+    width: 25%;
+  
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navleft img {
+    width: 70%; 
+    height: 100%; 
+    object-fit: contain; 
+    margin-right: 40%;
+}
+.navright {
+    height: 100%;
+    width: 60%;
+     gap: 6px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;  
+   
+    
+}
+.navright a{
+   text-decoration: none;
+   color: rgb(0, 26, 255);
+   font-family: Teachers;
+ font-family: 1200px;
+
+    
+}
+.link::after{
+    content: "";
+   height: 1.7px;
+   width: 100%;
+  display: block;
+  background-color: black;
+  transform: scale(0);
+  transition: transform 0.5s;
+  transform-origin: right;
+}
+.link:hover::after{
+   transform: scaleX(1);
+   transform-origin: left;
+}
+.bar{
+
+    height:100%;
+    width: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size:4vw;
+    flex-direction: column
+    
+}
+#hdnnv{
+    height: auto;
+    width: 60%;
+    display: none;
+    z-index: 25 ;
+    position: absolute; /* Or fixed if you want it on top even while scrolling */
+    top: 0; /* Position at the top of the viewport */
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border-right: 4px solid rgb(6, 188, 255);
+    border-bottom: 5px solid rgb(0, 179, 255);
+    border-top: 5px solid rgb(0, 187, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#hdnnv a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Teachers;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+#abtpci{
+    width: 100%;
+    display: flex;
+    background-color: #007bff;
+}
+#abtpci i{
+    margin-right: 72%;
+    margin-top:2%;
+}
+#abtpci a{
+    width: 100%;
+    color: #ffffff;
+    background-color: #007bff;
+}
+.hdnm{
+    height: auto;
+    width: 100%;
+   
+    display: flex;
+    display: none;
+    flex-direction: column;
+}
+.hdnm a{
+   font-size: 11px;
+}
+.navhiden{
+    height: 200px;
+    width: 140px;
+    position: absolute;
+    margin-top: 16%;
+    margin-right: 36%;
+    z-index: 1;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 3px solid rgb(0, 149, 255);
+}
+
+.div{
+   width: 100%;
+   height: 15%;
+   margin-top: 8px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.div:hover{
+  background-color: #01a6ff;
+  color: #ffffff;
+}
+.div a:hover{
+  color: #ffffff;
+}
+.navhiden2{
+    height: 100px;
+    width: 140px;
+    position: absolute;
+    margin-top: 10%;
+    z-index: 1;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 3px solid rgb(0, 140, 255);
+}
+.div2{
+   width: 100%;
+   height: 100%;
+   margin-top: 10px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.div2:hover{
+  background-color: #00ccff;
+  color: #ffffff;
+  
+}
+.div2 a:hover{
+  color: #ffffff;
+}
+.navhiden3{
+    height: 40px;
+    width: 140px;
+    position: absolute;
+    margin-top:5%;
+    z-index: 1;
+    display: flex;
+    margin-left: 40%;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    display: none;
+    border: 3px solid rgb(0, 34, 255);
+}
+.div3{
+   width: 100%;
+   height: 100%;
+   margin-top: 8px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.div3:hover{
+  background-color: #00ccff;
+  color: #ffffff;
+}
+.div3 a:hover{
+  color: #ffffff;
+}
+
+.mainimg{
+    height: 90%;
+    width: 100%;
+    background-image: url('real.heros.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat ;
+    z-index: -1;
+    display: flex;
+}
+.title{
+    height: 40%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.title  h1{
+    font-size: 1.5vw;
+    font-family: futura;
+    color: rgb(255, 255, 255);
+    margin-left:8%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(226, 7, 234, 0.2);
+    background-color: rgb(0, 98, 255);
+}
+.windata{
+    height: 35%;
+    width: 100%;
+    background-color: rgb(113, 149, 241);
+    display: flex;
+    justify-content: space-between;
+}
+.winleft{
+    height: 100%;
+    width:35% ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.wintittle{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.wintittle h2{
+   font-family: futura;
+   font-size: 2vw;
+   margin-left: 5%;
+   color: #ffffff;
+}
+.winnrlist{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.winnrlist span{
+   color: #ffffff;
+   font-family: Teachers;
+   margin-left: 5%;
+}
+.button{
+    height: 55%;
+    width: 25%;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 17, 255);
+}
+.button:hover{
+    background-color:rgb(113, 149, 241);
+    border: 2px solid black;
+}
+.button a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Teachers;
+}
+.winmid{
+    height: 100%;
+    width:35% ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.winmid h2{
+   font-family: futura;
+   font-size: 3.4vw;
+   color: #ffffff;
+   text-align: center;
+   /* margin-bottom: 35% */
+
+
+}
+.medal{
+    height:45%;
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ .gold {
+    height: 70%;
+    width: 30%;
+   color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:15%;
+}
+ .gold span {
+   font-family: futura;
+   font-size: 2vw;
+}
+.winright{
+    height: 100%;
+    width:25% ;
+}
+.winright img{
+    height: 100%;
+    width:100% ;
+   object-fit: contain;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    gap: 1%;
+    background: linear-gradient(to bottom, blue, rgb(113, 149, 241));
+
+}.pci{
+    height: 100%;
+    width: 32%;
+}
+
+.pcihed2-3{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Teachers;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+.pcihed2-3 p{
+ margin-top: 10%;
+}
+.hedpci1{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: self-end;
+    margin-left: 10%;
+}
+.hedpci1 h4{
+   font-family: Teachers;
+   color: #ffffff;
+}
+.pci2{
+    height: 100%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  
+}
+
+.pcihed2-2{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Teachers;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.pcihed2-2 p{
+ margin-top: 10%;
+}
+.pci3{
+    height: 100%;
+    width: 32%;
+   
+}
+.pcihed{
+    height: 12%;
+    display: flex;
+    justify-content: center;
+
+}
+.pcihed h2{
+    color: #ffffff;
+    font-family: futura;
+    position: relative;
+    top: 2vh;
+}
+.pcihed2{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    color: #ffffff;
+    font-family: Teachers;
+    flex-direction: column;
+}
+.pcihed2 p{
+ margin-top: 7%;
+}
+.picihed3{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.picihed3 .cont{
+   height: 50px;
+   width: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: blue;
+}
+.cont:hover{
+    background-color:rgb(113, 149, 241);
+    border: 1px solid rgb(255, 255, 255);
+}
+.lstfot{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(113, 149, 241);
+}
+.fotleft{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vw;
+}
+.fotleft h3{
+     font-family: futura;
+     color: #ffffff;
+}
+.fotright{
+    height: 100%;
+    width: 20%;
+    
+}
+.fotright img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media(max-width:800px){
+
+
+    /* Media Query for screen widths 800px or less */
+@media screen and (max-width: 800px) {
+    .lstfot {
+      flex-direction: column; 
+      align-items: center; 
+      height: 90%;
+      margin-top: 90%;
+      width: 100%;
+    }
+  
+    .fotleft, .fotright {
+      width: 100%; 
+      text-align: center; 
+      padding: 10px; 
+    }
+  
+    .fotleft h3 {
+      font-size: 3vw; 
+      text-align: center; 
+    }
+  
+    .fotright img {
+      width: 60%; 
+      height: auto; 
+      margin-bottom: 50%;
+    }
+  }
+  
+    footer {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  .pci3{
+    height: auto;
+    background-color: rgb(113, 149, 241);
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+  }
+    footer .pci, footer .pci2, footer .pci3 {
+      width: 100%;
+      height: 100%;
+      text-align: center; 
+      /* margin-bottom: 50px; */
+    }
+  
+    footer .pci3 .cont {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  
+    footer .pci, footer .pci2, footer .pci3 {
+      padding: 15px;
+    }
+  
+    footer h4, footer h2 {
+      font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+  
+    footer p {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+  
+    footer .pci3 .cont  {
+        height: 50px;
+        width: 45px;
+        justify-content: space-evenly;
+        
+
+    }
+  
+    footer .pci3 i {
+      font-size: 1.5rem; /* Adjust icon size for smaller screens */
+    }
+
+    .windata{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+    .winright{
+        width: 100%;
+        height: 25%;
+        
+    }
+    .winmid{
+  width: 100%;
+    height: 50%;
+    }
+    .winleft{
+        width: 100%;
+        height: 35%;
+        
+    }
+    .title{
+        height: 20%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .navleft img {
+      margin-left: 10%;
+    }
+
+    .navright {
+   display: none;
+        
+    }
+
+    .bar{
+        display: flex;
+        font-size:6vw;
+        
+    }
+    #hdnnv a{
+       
+        margin-top: 10px;
+       
+    }
+
+
+    #hdnnv{
+        
+        display: none;
+        z-index: 25 ;
+        position: absolute; /* Or fixed if you want it on top even while scrolling */
+        top: 15%; /* Position at the top of the viewport */
+        left: 0;
+       
+    }
+}
+@media(max-width:600px){
+    .title{
+        height: 20%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    #hdnnv{
+        
+        display: none;
+        z-index: 25 ;
+        position: absolute; /* Or fixed if you want it on top even while scrolling */
+        top: 5%; /* Position at the top of the viewport */
+        left: 0;
+       
+    }
+    /* #hdnnv{
+    
+        z-index: 10;
+       
+    } */
+    nav {
+        height: 10%;
+        width: 100%;
+        border-bottom: 20px solid blue;
+        
+    }
+
+    #abtpci i{
+        margin-right: 60%;
+        margin-top:4%;
+    }   
+
+
+        .bar{
+            display: flex;
+            font-size:8vw;
+            
+        }
+        
+    
+    #hdnnv a{
+       display: flex;
+        margin-top: 12px;
+    
+    }
+ 
+    .navleft {
+        height: 100%;
+        width: 60%;
+      
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .navleft img {
+        width: 70%; 
+        height: 100%; 
+        object-fit: contain; 
+        margin-right: 40%;
+    }
+}
