@@ -238,21 +238,22 @@ nav {
     z-index: -1;
     display: flex;
 }
-.title{
-    height: 40%;
-    width: 50%;
-    display: flex;
-    align-items: center;
 
+.heading{
+    height: 20%;
+    width: 45%;
+    margin-top: 15%;
+    margin-left: 1%;
 }
-.title  h1{
-    font-size: 1.5vw;
-    font-family: futura;
-    color: rgb(255, 255, 255);
-    margin-left:8%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(226, 7, 234, 0.2);
-    background-color: rgb(0, 98, 255);
+.heading h1{
+  font-family: futura;
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+.heading span{
+  font-family: futura;
+  color: #0967ff;
+  background-color: #ffffff;
 }
 .winner{
     height: 40%;
@@ -506,7 +507,92 @@ nav {
     width: 100%;
    object-fit: contain;
 }
+.brif{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.brif1{
+    height: 95%;
+    width: 40%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.brif1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.brif2{
+    height: 78%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+.brif2 h2{
+   font-family: Teachers;
+   margin-left: 2%;
+
+}
+.brif2 p{
+   font-family: Teachers;
+   font-size: 1.1vw;
+   padding: 20px;
+
+}
+.br{
+    height: 5px;
+    width:100px;
+    border-radius: 10px;
+    margin-left:2%;
+    margin-top: 2%;
+    background-color: #0084ff;
+}
 @media(max-width:800px){
+    .brif2 h2{
+        font-family: Teachers;
+        margin-left: 5%;
+     
+     }
+.brif2 p{
+   font-family: Teachers;
+   font-size: 2.5vw;
+   
+
+}
+    .brif1 img{
+        height: 100%;
+        width: 95%;
+       border-radius: 10px;
+        object-fit: contain;
+    }
+    .brif1{
+        height: 90%;
+        width: 100%;
+        display: flex;
+    }
+    .brif2{
+        height: 90%;
+        width: 100%;
+    }
+    .brif{
+       height: 80%;
+        display: flex;
+       flex-direction: column;
+    }
+    
+    .heading h1{
+      font-family: Teachers;
+      font-size: 2.5vw;
+    }
     .fotter1 h2{
         margin-left: 15%;
         font-size: 3.5vw;
@@ -578,11 +664,9 @@ nav {
        
     }
    
-    .title{
-        height: 20%;
-        width: 40%;
-        display: flex;
-        align-items: center;
+    .title h1{
+        width: 100%;
+      font-size: 1.8vw;
     
     }
     
